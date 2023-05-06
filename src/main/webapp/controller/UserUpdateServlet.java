@@ -27,7 +27,7 @@ public class UserUpdateServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		User user = new User();
 		user.setId(Integer.parseInt(request.getParameter("id")));
 		user.setName(request.getParameter("name"));
